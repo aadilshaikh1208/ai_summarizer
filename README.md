@@ -167,6 +167,10 @@ GET `/api/status/<task_id>/`
 
 GET `/api/tasks/`
 
+### Get Task Details
+
+GET `task/<str:task_id>/`
+
 ---
 
 ## 📊 Task Lifecycle
@@ -194,7 +198,7 @@ Each task follows this lifecycle:
 * No authentication system
 * No rate limiting
 * SQLite is not production-grade
-* No deployment configured (demonstrated locally)
+* No deployment configured (demonstrated locally), because there is no way to deploy redis worker other than aws or any other cloud platform (which is paid). 
 
 ---
 
