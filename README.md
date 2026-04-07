@@ -54,7 +54,6 @@ ai_summarizer/
 │
 ├── manage.py
 ├── requirements.txt
-├── Procfile
 ├── .env
 ├── db.sqlite3
 │
@@ -109,10 +108,11 @@ pip install -r requirements.txt
 Create a `.env` file:
 
 ```
-SECRET_KEY=your-secret-key
-DEBUG=True
-GROQ_API_KEY=your-api-key
-REDIS_URL=redis://localhost:6379/0
+GROQ_API_KEY=your_groq_api_key_here
+CELERY_BROKER_URL=redis://localhost:6379/0
+CELERY_RESULT_BACKEND=redis://localhost:6379/0
+SECRET_KEY=django-secret-key-here
+
 ```
 
 ---
