@@ -1,0 +1,9 @@
+django
+djangorestframework
+celery
+redis
+langchain
+langchain-groq
+python-dotenv
+gunicorn
+whitenoise
